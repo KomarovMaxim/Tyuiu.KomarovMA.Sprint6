@@ -168,7 +168,7 @@ namespace Tyuiu.KomarovMA.Sprint6.Task0.V18
             this.Controls.Add(this.groupBox1);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Спринт 6 | Таск 1 | Вариант 18 | Комаров М.А.";
+            this.Text = "Спринт 6 | Таск 0 | Вариант 18 | Комаров М.А.";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
