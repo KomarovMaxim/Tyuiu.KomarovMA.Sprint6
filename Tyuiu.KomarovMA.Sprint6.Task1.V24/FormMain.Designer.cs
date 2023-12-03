@@ -31,19 +31,19 @@ namespace Tyuiu.KomarovMA.Sprint6.Task1.V24
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBox_KMA = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.textBoxTask_KMA = new System.Windows.Forms.TextBox();
             this.pictureBoxFormula_KMA = new System.Windows.Forms.PictureBox();
+            this.textBoxTask_KMA = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBoxInput_KMA = new System.Windows.Forms.GroupBox();
-            this.labelStart_KMA = new System.Windows.Forms.Label();
-            this.labelEnd_KMA = new System.Windows.Forms.Label();
-            this.textBoxStart_KMA = new System.Windows.Forms.TextBox();
             this.textBoxEnd_KMA = new System.Windows.Forms.TextBox();
+            this.textBoxStart_KMA = new System.Windows.Forms.TextBox();
+            this.labelEnd_KMA = new System.Windows.Forms.Label();
+            this.labelStart_KMA = new System.Windows.Forms.Label();
             this.buttonResult_KMA = new System.Windows.Forms.Button();
             this.buttonRef_KMA = new System.Windows.Forms.Button();
             this.groupBoxOutPut_KMA = new System.Windows.Forms.GroupBox();
-            this.labelResult_KMA = new System.Windows.Forms.Label();
             this.textBoxResult_KMA = new System.Windows.Forms.TextBox();
+            this.labelResult_KMA = new System.Windows.Forms.Label();
             this.groupBox_KMA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_KMA)).BeginInit();
             this.groupBoxInput_KMA.SuspendLayout();
@@ -61,16 +61,6 @@ namespace Tyuiu.KomarovMA.Sprint6.Task1.V24
             this.groupBox_KMA.TabStop = false;
             this.groupBox_KMA.Text = "Условие";
             // 
-            // textBoxTask_KMA
-            // 
-            this.textBoxTask_KMA.Location = new System.Drawing.Point(0, 19);
-            this.textBoxTask_KMA.Multiline = true;
-            this.textBoxTask_KMA.Name = "textBoxTask_KMA";
-            this.textBoxTask_KMA.ReadOnly = true;
-            this.textBoxTask_KMA.Size = new System.Drawing.Size(425, 172);
-            this.textBoxTask_KMA.TabIndex = 1;
-            this.textBoxTask_KMA.Text = "Вывести таблицу значений функции f(x) на заданном диапазоне [-5;5] с шагом 1";
-            // 
             // pictureBoxFormula_KMA
             // 
             this.pictureBoxFormula_KMA.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_KMA.Image")));
@@ -80,6 +70,16 @@ namespace Tyuiu.KomarovMA.Sprint6.Task1.V24
             this.pictureBoxFormula_KMA.TabIndex = 1;
             this.pictureBoxFormula_KMA.TabStop = false;
             this.pictureBoxFormula_KMA.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // textBoxTask_KMA
+            // 
+            this.textBoxTask_KMA.Location = new System.Drawing.Point(0, 19);
+            this.textBoxTask_KMA.Multiline = true;
+            this.textBoxTask_KMA.Name = "textBoxTask_KMA";
+            this.textBoxTask_KMA.ReadOnly = true;
+            this.textBoxTask_KMA.Size = new System.Drawing.Size(425, 172);
+            this.textBoxTask_KMA.TabIndex = 1;
+            this.textBoxTask_KMA.Text = "Вывести таблицу значений функции f(x) на заданном диапазоне [-5;5] с шагом 1";
             // 
             // groupBoxInput_KMA
             // 
@@ -95,15 +95,19 @@ namespace Tyuiu.KomarovMA.Sprint6.Task1.V24
             this.groupBoxInput_KMA.Text = "Ввод данных";
             this.groupBoxInput_KMA.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // labelStart_KMA
+            // textBoxEnd_KMA
             // 
-            this.labelStart_KMA.AutoSize = true;
-            this.labelStart_KMA.Location = new System.Drawing.Point(6, 16);
-            this.labelStart_KMA.Name = "labelStart_KMA";
-            this.labelStart_KMA.Size = new System.Drawing.Size(39, 13);
-            this.labelStart_KMA.TabIndex = 3;
-            this.labelStart_KMA.Text = "Старт:";
-            this.labelStart_KMA.Click += new System.EventHandler(this.label1_Click);
+            this.textBoxEnd_KMA.Location = new System.Drawing.Point(108, 58);
+            this.textBoxEnd_KMA.Name = "textBoxEnd_KMA";
+            this.textBoxEnd_KMA.Size = new System.Drawing.Size(78, 20);
+            this.textBoxEnd_KMA.TabIndex = 5;
+            // 
+            // textBoxStart_KMA
+            // 
+            this.textBoxStart_KMA.Location = new System.Drawing.Point(9, 58);
+            this.textBoxStart_KMA.Name = "textBoxStart_KMA";
+            this.textBoxStart_KMA.Size = new System.Drawing.Size(78, 20);
+            this.textBoxStart_KMA.TabIndex = 3;
             // 
             // labelEnd_KMA
             // 
@@ -114,38 +118,36 @@ namespace Tyuiu.KomarovMA.Sprint6.Task1.V24
             this.labelEnd_KMA.TabIndex = 4;
             this.labelEnd_KMA.Text = "Конец:";
             // 
-            // textBoxStart_KMA
+            // labelStart_KMA
             // 
-            this.textBoxStart_KMA.Location = new System.Drawing.Point(9, 58);
-            this.textBoxStart_KMA.Name = "textBoxStart_KMA";
-            this.textBoxStart_KMA.Size = new System.Drawing.Size(78, 20);
-            this.textBoxStart_KMA.TabIndex = 3;
-            // 
-            // textBoxEnd_KMA
-            // 
-            this.textBoxEnd_KMA.Location = new System.Drawing.Point(108, 58);
-            this.textBoxEnd_KMA.Name = "textBoxEnd_KMA";
-            this.textBoxEnd_KMA.Size = new System.Drawing.Size(78, 20);
-            this.textBoxEnd_KMA.TabIndex = 5;
+            this.labelStart_KMA.AutoSize = true;
+            this.labelStart_KMA.Location = new System.Drawing.Point(6, 16);
+            this.labelStart_KMA.Name = "labelStart_KMA";
+            this.labelStart_KMA.Size = new System.Drawing.Size(39, 13);
+            this.labelStart_KMA.TabIndex = 3;
+            this.labelStart_KMA.Text = "Старт:";
+            this.labelStart_KMA.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonResult_KMA
             // 
+            this.buttonResult_KMA.BackColor = System.Drawing.Color.Green;
             this.buttonResult_KMA.Location = new System.Drawing.Point(369, 341);
             this.buttonResult_KMA.Name = "buttonResult_KMA";
             this.buttonResult_KMA.Size = new System.Drawing.Size(101, 65);
             this.buttonResult_KMA.TabIndex = 6;
             this.buttonResult_KMA.Text = "Выполнить";
-            this.buttonResult_KMA.UseVisualStyleBackColor = true;
+            this.buttonResult_KMA.UseVisualStyleBackColor = false;
             this.buttonResult_KMA.Click += new System.EventHandler(this.buttonResult_KMA_Click);
             // 
             // buttonRef_KMA
             // 
+            this.buttonRef_KMA.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.buttonRef_KMA.Location = new System.Drawing.Point(288, 341);
             this.buttonRef_KMA.Name = "buttonRef_KMA";
             this.buttonRef_KMA.Size = new System.Drawing.Size(72, 65);
             this.buttonRef_KMA.TabIndex = 7;
             this.buttonRef_KMA.Text = "Справка";
-            this.buttonRef_KMA.UseVisualStyleBackColor = true;
+            this.buttonRef_KMA.UseVisualStyleBackColor = false;
             this.buttonRef_KMA.Click += new System.EventHandler(this.buttonRef_KMA_Click);
             // 
             // groupBoxOutPut_KMA
@@ -159,15 +161,6 @@ namespace Tyuiu.KomarovMA.Sprint6.Task1.V24
             this.groupBoxOutPut_KMA.TabStop = false;
             this.groupBoxOutPut_KMA.Text = "Вывод данных";
             // 
-            // labelResult_KMA
-            // 
-            this.labelResult_KMA.AutoSize = true;
-            this.labelResult_KMA.Location = new System.Drawing.Point(6, 22);
-            this.labelResult_KMA.Name = "labelResult_KMA";
-            this.labelResult_KMA.Size = new System.Drawing.Size(62, 13);
-            this.labelResult_KMA.TabIndex = 0;
-            this.labelResult_KMA.Text = "Результат:";
-            // 
             // textBoxResult_KMA
             // 
             this.textBoxResult_KMA.Location = new System.Drawing.Point(28, 46);
@@ -176,6 +169,15 @@ namespace Tyuiu.KomarovMA.Sprint6.Task1.V24
             this.textBoxResult_KMA.ReadOnly = true;
             this.textBoxResult_KMA.Size = new System.Drawing.Size(223, 297);
             this.textBoxResult_KMA.TabIndex = 1;
+            // 
+            // labelResult_KMA
+            // 
+            this.labelResult_KMA.AutoSize = true;
+            this.labelResult_KMA.Location = new System.Drawing.Point(6, 22);
+            this.labelResult_KMA.Name = "labelResult_KMA";
+            this.labelResult_KMA.Size = new System.Drawing.Size(62, 13);
+            this.labelResult_KMA.TabIndex = 0;
+            this.labelResult_KMA.Text = "Результат:";
             // 
             // FormMain
             // 
