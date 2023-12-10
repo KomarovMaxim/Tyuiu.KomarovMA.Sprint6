@@ -32,13 +32,13 @@ namespace Tyuiu.KomarovMA.Sprint6.Task6.V21
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_KMA));
             this.groupBoxTask_KMA = new System.Windows.Forms.GroupBox();
+            this.textBoxTask_KMA = new System.Windows.Forms.TextBox();
             this.buttonDone_KMA = new System.Windows.Forms.Button();
             this.buttonHelp_KMA = new System.Windows.Forms.Button();
             this.buttonOpenFile_KMA = new System.Windows.Forms.Button();
-            this.textBoxTask_KMA = new System.Windows.Forms.TextBox();
             this.groupBoxInput_KMA = new System.Windows.Forms.GroupBox();
-            this.groupBoxOutPut_KMA = new System.Windows.Forms.GroupBox();
             this.textBoxInPut_KMA = new System.Windows.Forms.TextBox();
+            this.groupBoxOutPut_KMA = new System.Windows.Forms.GroupBox();
             this.textBoxOutPut_KMA = new System.Windows.Forms.TextBox();
             this.openFileDialogTask_KMA = new System.Windows.Forms.OpenFileDialog();
             this.toolTip_KMA = new System.Windows.Forms.ToolTip(this.components);
@@ -56,6 +56,17 @@ namespace Tyuiu.KomarovMA.Sprint6.Task6.V21
             this.groupBoxTask_KMA.TabIndex = 0;
             this.groupBoxTask_KMA.TabStop = false;
             this.groupBoxTask_KMA.Text = "Условие";
+            // 
+            // textBoxTask_KMA
+            // 
+            this.textBoxTask_KMA.Location = new System.Drawing.Point(6, 19);
+            this.textBoxTask_KMA.Multiline = true;
+            this.textBoxTask_KMA.Name = "textBoxTask_KMA";
+            this.textBoxTask_KMA.ReadOnly = true;
+            this.textBoxTask_KMA.Size = new System.Drawing.Size(768, 75);
+            this.textBoxTask_KMA.TabIndex = 3;
+            this.textBoxTask_KMA.Text = "Вывести слова в которых встречается g в результирующею строку и вывести ее в text" +
+    "BoxOut.";
             // 
             // buttonDone_KMA
             // 
@@ -87,20 +98,9 @@ namespace Tyuiu.KomarovMA.Sprint6.Task6.V21
             this.buttonOpenFile_KMA.Name = "buttonOpenFile_KMA";
             this.buttonOpenFile_KMA.Size = new System.Drawing.Size(68, 45);
             this.buttonOpenFile_KMA.TabIndex = 2;
-            this.toolTip_KMA.SetToolTip(this.buttonOpenFile_KMA, "Производит поиск в файле.");
+            this.toolTip_KMA.SetToolTip(this.buttonOpenFile_KMA, "Производит поиск файла.");
             this.buttonOpenFile_KMA.UseVisualStyleBackColor = true;
             this.buttonOpenFile_KMA.Click += new System.EventHandler(this.buttonOpenFile_KMA_Click);
-            // 
-            // textBoxTask_KMA
-            // 
-            this.textBoxTask_KMA.Location = new System.Drawing.Point(6, 19);
-            this.textBoxTask_KMA.Multiline = true;
-            this.textBoxTask_KMA.Name = "textBoxTask_KMA";
-            this.textBoxTask_KMA.ReadOnly = true;
-            this.textBoxTask_KMA.Size = new System.Drawing.Size(768, 75);
-            this.textBoxTask_KMA.TabIndex = 3;
-            this.textBoxTask_KMA.Text = "Вывести слова в которых встречается g в результирующею строку и вывести ее в text" +
-    "BoxOut.";
             // 
             // groupBoxInput_KMA
             // 
@@ -112,6 +112,14 @@ namespace Tyuiu.KomarovMA.Sprint6.Task6.V21
             this.groupBoxInput_KMA.TabStop = false;
             this.groupBoxInput_KMA.Text = "Ввод:";
             // 
+            // textBoxInPut_KMA
+            // 
+            this.textBoxInPut_KMA.Location = new System.Drawing.Point(6, 61);
+            this.textBoxInPut_KMA.Multiline = true;
+            this.textBoxInPut_KMA.Name = "textBoxInPut_KMA";
+            this.textBoxInPut_KMA.Size = new System.Drawing.Size(360, 327);
+            this.textBoxInPut_KMA.TabIndex = 0;
+            // 
             // groupBoxOutPut_KMA
             // 
             this.groupBoxOutPut_KMA.Controls.Add(this.textBoxOutPut_KMA);
@@ -121,14 +129,6 @@ namespace Tyuiu.KomarovMA.Sprint6.Task6.V21
             this.groupBoxOutPut_KMA.TabIndex = 4;
             this.groupBoxOutPut_KMA.TabStop = false;
             this.groupBoxOutPut_KMA.Text = "Вывод:";
-            // 
-            // textBoxInPut_KMA
-            // 
-            this.textBoxInPut_KMA.Location = new System.Drawing.Point(6, 61);
-            this.textBoxInPut_KMA.Multiline = true;
-            this.textBoxInPut_KMA.Name = "textBoxInPut_KMA";
-            this.textBoxInPut_KMA.Size = new System.Drawing.Size(360, 327);
-            this.textBoxInPut_KMA.TabIndex = 0;
             // 
             // textBoxOutPut_KMA
             // 
