@@ -17,7 +17,7 @@ namespace Tyuiu.KomarovMA.Sprint6.Task5.V21
             InitializeComponent();
         }
         DataService ds = new DataService();
-        string path = @"D:\SOURSE\Tyuiu.KomarovMA.Sprint6\Tyuiu.KomarovMA.Sprint6.Task6.V21\bin\Debug\InPutFileTask5V21.txt";
+        string path = @"D:\SOURSE\Tyuiu.KomarovMA.Sprint6\Tyuiu.KomarovMA.Sprint6.Task5.V21\bin\Debug\InPutFileTask5V21.txt";
         private void FormMain_KMA_Load(object sender, EventArgs e)
         {
 
